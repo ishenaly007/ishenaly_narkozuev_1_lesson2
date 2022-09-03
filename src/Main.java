@@ -2,30 +2,32 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-       /* ageAndTemperature(7, -25);
+      /*  ageAndTemperature(7, -25);
         ageAndTemperature(45, 31);
         ageAndTemperature(20, 25);
         ageAndTemperature(45, -11);
         ageAndTemperature(1, 15);
         ageAndTemperature(generateRandomAge(), 15);
         ageAndTemperature(generateRandomAge(), 15);
-        System.out.println(generateRandomAge());*/
+        System.out.println(generateRandomAge());
         ageAndTemperature(generateRandomAge(),25);
-        // ??? * true = ???
-
+        // ??? * true = ???*/
+        System.out.println(ageAndTemperature(20,10));
+        System.out.println(ageAndTemperature(generateRandomAge(),10));
     }
-    public static double ageAndTemperature(double age , double temperature) {
-        // âîçâğàùàåìûé ìåòîä c âõîäÿùèìè ïàğàìåòğàìè
+    public static String ageAndTemperature(double age , double temperature) {
+        // Ğ²Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµĞ¼Ñ‹Ğ¹ Ğ¼ĞµÑ‚Ğ¾Ğ´ c Ğ²Ñ…Ğ¾Ğ´ÑÑ‰Ğ¸Ğ¼Ğ¸ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€Ğ°Ğ¼Ğ¸
+
         if (age >= 20 && age < 46 && temperature >= -20 && temperature <= 30) {
-            System.out.println("Ìîæíî èäòè ãóëÿòü1");
+            return "ĞœĞ¾Ğ¶Ğ½Ğ¾ Ğ¸Ğ´Ñ‚Ğ¸ Ğ³ÑƒĞ»ÑÑ‚ÑŒ1";
         } else if (age <= 20 && temperature >= 0 && temperature <= 28) {
-            System.out.println("Ìîæíî èäòè ãóëÿòü2");
+            return "ĞœĞ¾Ğ¶Ğ½Ğ¾ Ğ¸Ğ´Ñ‚Ğ¸ Ğ³ÑƒĞ»ÑÑ‚ÑŒ2";
         } else if (age > 45 && temperature > -11 &&  temperature < 26 ) {
-            System.out.println("Ìîæíî èäòè ãóëÿòü3");
+            return "ĞœĞ¾Ğ¶Ğ½Ğ¾ Ğ¸Ğ´Ñ‚Ğ¸ Ğ³ÑƒĞ»ÑÑ‚ÑŒ3";
         } else {
-            System.out.println("Îñòàâàéòåñü äîìà!");
+            return "ĞÑÑ‚Ğ°Ğ²Ğ°Ğ¹Ñ‚ĞµÑÑŒ Ğ´Ğ¾Ğ¼Ğ°!";
         }
-        return age;
+
     }
 
     public static int generateRandomAge() {
